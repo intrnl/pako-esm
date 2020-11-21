@@ -1,7 +1,7 @@
 {
   "name": "@intrnl/pako-esm",
   "description": "A high speed zlib port to JavaScript",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "repository": {
     "url": "https://github.com/intrnl/pako-esm"
   },
