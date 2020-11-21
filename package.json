@@ -1,10 +1,20 @@
 {
   "name": "@intrnl/pako-esm",
   "description": "A high speed zlib port to JavaScript",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "repository": {
     "url": "https://github.com/intrnl/pako-esm"
   },
-  "type": "module",
-  "main": "./index.js"
+  "main": "dist/pako-esm.js",
+  "module": "dist/pako-esm.mjs",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "rollup": "^2.33.3"
+  }
 }
